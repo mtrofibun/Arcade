@@ -23,15 +23,34 @@ const questions = [{
 
 ]
 
+let types = [
+  ['E', 'I'],
+  ['S', 'N'],
+  ['T', 'F'],
+  ['J', 'P']
+];
+
+let scores = {
+  E: 0, I: 0,
+  S: 0, N: 0,
+  T: 0, F: 0,
+  J: 0, P: 0
+};
 
 const optionButtons = document.querySelector('#group-buttons');
 
 optionButtons.addEventListener('click', event =>{
+    let mbtitype = ''
     if(event.target.id == "option-one"){
         console.log('one');
+        mbtitype = questions[questioncounter].type.charAt(0)
+        scores[mbtitype] += 1;
+
     }
     else if(event.target.id == "option-two"){
         console.log('two');
+        mbtitype = questions[questioncounter].type.charAt(1)
+        scores[mbtitype] += 1;
     }
     questioncounter += 1;
     questionFunction();
@@ -56,26 +75,12 @@ function results(){
     document.getElementById('option-one').style.display = 'none';
     document.getElementById('option-two').style.display= 'none';
     let mbti = '';
-    for(let key in data){
-        if(questions[key][0] > questions[key][1]){
-            
-        }
-    }
+    
+    console.log(mbti)
 }
 
 
-const types = [
 
-    {'EI' : { 'E' : 0,'I' : 0,} },
-
-    {'SN' : { 'S' : 0,'N' : 0,} },
-
-    {'TF' : { 'T' : 0,'F' : 0,} },
-
-    {'JP' : { 'J' : 0,'P' : 0,} },
-
-
-]
 
 
 
