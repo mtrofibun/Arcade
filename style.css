@@ -1,0 +1,11 @@
+.main-container{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.question-container{
+   display:flex;
+   justify-self: center;
+   text-align: center;
+}
