@@ -1,11 +1,78 @@
-.main-container{
-    display:flex;
+body{
+    /*background-image: url(https://shop.cinemashop.com/cdn/shop/products/space-explorer-carpet.jpg?v=1641479250);
+    */
+    background-color:#373F47;
+    font-size: 20px;
+    
+    display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    
+}
+
+.main-container, .start-page{
+   text-align: center;
+   max-width: 400px;
+   
+}
+button{
+    border:none;
+    border-radius: 5px;
+    margin:20px;
+    
 }
 
 .question-container{
-   display:flex;
-   justify-self: center;
-   text-align: center;
+    display: block;
+    text-align: center;
+    margin:10px,auto;
+    padding: 10px 20px;
+}
+
+h1,p{
+     color: #C3C9E9;
+     
+}
+
+p{
+    font-size:25px;
+}
+.group-buttons{
+    max-height:400px;
+    
+}
+button:hover{
+    cursor: pointer;
+    
+}
+
+#option-one, #option-two{
+    font-size: 20px;
+    padding:3%;
+    background-color:#564D80;
+    color: #C3C9E9;
+}
+
+#option-one:hover, #option-two:hover{
+    
+    padding:3%;
+    background-color: #ffffff;
+    transition: 5ms;
+    color:#564D80;
+}
+
+.button1{
+    min-height:20%;
+    font-size: 20px;
+    max-width: 50%;
+    padding: 10px;
+    background-color:#564D80;
+    color: #C3C9E9;
+    
+}
+
+.button1:hover{
+    background-color: #ffffff;
+    transition: 5ms;
+    color:#564D80;
 }

@@ -13,15 +13,16 @@
 
         <div id = "start-page">
             <h1>Claw Machine</h1>
-            <p>Enter a token and see what item resonates with you!</p>
+            <p>Enter a token and see what prize resonates with you!</p>
             <div class = "machine">
                 
             </div>
-            <button id = 'token-button'>Insert One Token</button>
+            <button class = "button1" id = 'token-button'>Insert One Token</button>
+            <button class = "button1" id = 'endpage'>View Prizes</button>
         </div>
 
         <div id = 'question-container' style="display: none;">
-            <h1 id = "questions"></h1>
+            <h2 id = "questions"></h2>
             <img id = "image">
             <div id = "group-buttons">
             <button id = "option-one">
@@ -31,6 +32,11 @@
 
             </button>
             </div>
+        </div>
+
+        <div id = "results" style="display: none;">
+            <p id = "result-test"></p>
+            <img id = "result-img">
         </div>
     </div>
     <script src = 'script.js'></script>
