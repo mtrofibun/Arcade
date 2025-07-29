@@ -60,11 +60,12 @@ button:hover{
 }
 
 .button1{
-    min-height:20%;
+    min-height:10%;
     font-size: 20px;
     /*border:dotted 3px ;*/
-    max-width: 50%;
+    max-width: 60%;
     padding: 13px;
+    margin: auto;
     background-color:#564D80;
     color: #cde9c3;
     

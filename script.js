@@ -16,11 +16,11 @@ const questions = [{
     question : 'Q3: When you pick a game to play, what do you prefer:',
     type : 'SN',
     option1 : `I prefer games with straight forward paths, it's more enjoyable seeing immediate results!`,
-    option2 : 'Games that invite you to explore patterns, and unique strategies are more fun!'
+    option2 : 'I want games that invite me to explore patterns. I find unique strategies are more fun!'
 
 },
 {
-    question : 'Q4 : Faced with many options, what do you usually choose?',
+    question : 'Q4 : Faced with the option to pick a new game, what do you usually choose?',
     type : 'SN',
     option1 : 'I want to stick with a familiar game it is good to know exactly what to expect and how to win',
     option2 : 'I would like to try a brand-new game, the more challenging it is the better!'
@@ -36,10 +36,10 @@ const questions = [{
     question : `Q6 : It's finally your turn! You're on the track of setting a new record that a crowd has appeared around you!`,
     type : 'EI',
     option1 : `The pressure is on, you can't disappoint your newly made fans!`,
-    option2 : `All these eyes on you make you feel like you're going to lose!`
+    option2 : `All these eyes on you make you feel like you're going to make a mistake`
 },
 {
-    question : `Q7 : Oh no! It seems like you've lost,`,
+    question : `Q7 : Oh no! It seems like you've lost the game,`,
     type : 'TF',
     option1 : ``,
     option2 : ``
