@@ -137,7 +137,6 @@ function results(){
     console.log(mbti)
     document.getElementById('results').style.display = 'block';
     document.getElementById('result-img').src = `graphics/${mbti}.png`
-    document.getElementById('result-test').textContent = mbti;
     
 }
 
