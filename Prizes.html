@@ -37,44 +37,33 @@
 <body>
 
   <div class = "thumbnails">
-  <img src="transparentGraphics/rubix.png" alt="Thumbnail" class="thumbnail" id="rubix" style = 'width: 150px;'>
+  <img src="transparentGraphics/rubixcube.png" alt="Rubix Cube" class="thumbnail" id="INTJ" style = 'width: 150px;'>
 
-  <img src="transparentGraphics/kazoo.png" alt="Thumbnail" class="thumbnail" id="thumb" style = 'width: 150px;'>
-  <img src="transparentGraphics/minifig.png" alt="Thumbnail" class="thumbnail" id="thumb" style = 'width: 150px;'>
-    <img src="transparentGraphics/lollipop.png" alt="Thumbnail" class="thumbnail" id="thumb" style = 'width: 150px;'>
-  <img src="transparentGraphics/keychain.png" alt="Thumbnail" class="thumbnail" id="thumb" style = 'width: 150px;'>
+  <img src="transparentGraphics/kazoo.png" alt="Kazoo" class="thumbnail" id="ESFP" style = 'width: 150px;'>
+  <img src="transparentGraphics/minifig.png" alt="Mini Figure" class="thumbnail" id="ISFJ" style = 'width: 150px;'>
+    <img src="transparentGraphics/lollipop.png" alt="Lollipop" class="thumbnail" id="thumb" style = 'width: 150px;'>
+  <img src="transparentGraphics/keychain.png" alt="Key Chain" class="thumbnail" id="thumb" style = 'width: 150px;'>
   </div>
 
-  <div class="overlays" id="overlay">
-    <img src="graphics/rubixcube.png" id = "rubix-overlay" alt="Full Image">
+  <div class="overlays" id = "overlays">
+    <img src="" id = "overlay">
   </div>
 
   <script>
-/* attempt to fix this with all the objects */
-    const prizes = ['rubix']
-    const allthumbnail = document.querySelector('img')
-    const alloverlay = document.querySelectorAll('.overlays img')
+    const images = document.querySelectorAll('img')
+    const overlay = document.getElementById('overlays')
+    const overlayimage = document.getElementById('overlay')
 
-    allthumbnail.addEventListener('click', event => {
-        if(event.target.id in prizes){
-            console.log('in')
-            `${event.target.id}-overlay`.style.display = 'flex';
-        }
+    images.forEach(img =>{
+      img.addEventListener('click', event =>{
+        overlayimage.src = `/graphics/${event.target.id}.png`;
+        overlay.style.display = 'flex';
+      })
     })
-
-    const thumbnail = document.getElementById('thumb');
-    const overlay = document.getElementById('overlay');
-    console.log(alloverlay)
-    console.log(allthumbnail)
-    
-
-
-    thumbnail.addEventListener('click', () => {
-      overlay.style.display = 'flex';
-    });
 
     overlay.addEventListener('click', () => {
       overlay.style.display = 'none';
+      overlayimage.src = '';
     });
   </script>
 
