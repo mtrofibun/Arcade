@@ -75,7 +75,7 @@ let scores = {
 };
 
 const optionButtons = document.querySelector('#group-buttons');
-audios_array = [ '/graphics/Button.mp3','/graphics/Button2.mp3','/graphics/Button3.mp3','/graphics/Button4.mp3','/graphics/Button5.mp3']
+audios_array = [ '/Arcade/graphics/Button.mp3','/Arcade/graphics/Button2.mp3','/Arcade/graphics/Button3.mp3','/Arcade/graphics/Button4.mp3','/Arcade/graphics/Button5.mp3']
 
 
 optionButtons.addEventListener('click', event =>{
