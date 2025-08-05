@@ -7,42 +7,19 @@
     <link rel = 'stylesheet' href = "style.css">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-      <style>
-    img{
-      cursor:pointer;
-    }
-    .overlays {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    .overlays img {
-      max-width: 90%;
-      max-height: 90%;
-      
-    }
-  </style>
 </head>
+<body>
+
 
 <body>
-  
+  <div class = "prize-corner">
   <div class = "thumbnails">
-    <h2>Prize Corner</h2 style = "margin: 0 auto;">
+    <h1>Prize Corner</h1>
   <img src="transparentGraphics/rubixcube.png" alt="Rubix Cube" class="thumbnail" id="INTJ" style='width: 150px;'>
   <img src="transparentGraphics/lollipop.png" alt="Lollipop" class="thumbnail" id="ESFJ" style='width: 150px;'>
   <img src="transparentGraphics/kazoo.png" alt="Kazoo" class="thumbnail" id="ESFP" style='width: 150px;'>
   <img src="transparentGraphics/minifig.png" alt="Mini Figure" class="thumbnail" id="ISFJ" style='width: 150px;'>
   <img src="transparentGraphics/rubberduck.png" alt="Rubber Duck" class="thumbnail" id="ISFP" style='width: 150px;'>
-  <img src="transparentGraphics/playing cards.png" alt="Playing Cards" class="thumbnail" id="ESTP" style='width: 200px;'>
   <img src="transparentGraphics/yoyo.png" alt="Yo Yo" class="thumbnail" id="ISTP" style='width: 150px;'>
   <img src="transparentGraphics/lavalamp.png" alt="Lava Lamp" class="thumbnail" id="INFJ" style='width: 150px;'>
   <img src="transparentGraphics/console.png" alt="Console" class="thumbnail" id="ENTP" style='width: 150px;'>
@@ -52,7 +29,8 @@
   <img src="transparentGraphics/tamagotchi.png" alt="Tamagotchi" class="thumbnail" id="ENFP" style='width: 150px;'>
   <img src="transparentGraphics/watergun.png" alt="Tamagotchi" class="thumbnail" id="ESTJ" style='width: 150px;'>
   <img src="transparentGraphics/gachapon.png" alt="Capsule Toy" class="thumbnail" id="INFP" style='width: 150px;'>
-  
+  <img src="transparentGraphics/clawmachine.png" alt="Claw Machine" class="thumbnail" id="ENTJ" style='width: 150px;'>
+   <img src="transparentGraphics/playing cards.png" alt="Playing Cards" class="thumbnail" id="ESTP" style='width: 150px;'>
 
 
 
@@ -61,7 +39,8 @@
   <div class="overlays" id = "overlays">
     <img src="" id = "overlay">
   </div>
-
+  <p></p>
+  </div>
   <script>
     const images = document.querySelectorAll('img')
     const overlay = document.getElementById('overlays')

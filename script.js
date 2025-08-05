@@ -1,45 +1,45 @@
 let questioncounter = 0;
 
 const questions = [{
-    question : 'Q1 : You step into a buzzing arcade full of flashing lights and noise. Do you:',
+    question : 'You step into a buzzing arcade full of flashing lights and noise. Do you....',
     type : 'EI',
     option1 : 'Jump right into the middle of the action! The flashy bright colors have already caught your attention',
     option2 : 'Analyze the layout, you want to find the games that suit your own rhythm'
 },
 {
-    question : 'Q2 :  Before you start playing, do you:',
+    question : 'Before you start playing, do you....',
     type : 'JP',
     option1 : 'Take a moment to figure out what games you should spend your tokens on, there is no rush',
     option2 : 'Wander freely, letting whatever catches your eye guide your play'
 },
 {
-    question : 'Q3: When you pick a game to play, what do you prefer:',
+    question : 'When you pick a game to play, what do you prefer?',
     type : 'SN',
     option1 : `I prefer games with straight forward paths, it's more enjoyable seeing immediate results!`,
     option2 : 'I want games that invite me to explore patterns. I find unique strategies are more fun!'
 
 },
 {
-    question : 'Q4 : Faced with the option to pick a new game, what do you usually choose?',
+    question : 'When faced with the option to pick a new game, what do you usually choose?',
     type : 'SN',
     option1 : 'I want to stick with a familiar game it is good to know exactly what to expect and how to win',
     option2 : 'I would like to try a brand-new game, the more challenging it is the better!'
 },
 {
-    question : 'Q5 : While waiting your turn on a popular game you spot a group of people',
+    question : 'While waiting your turn on a popular game you spot a group of people...',
     type : 'EI',
     option1 : 'Strike up a conversation with other players, to pass the time I like to share tips',
     option2 : 'Silently observe the current player, I am too focused on the game to notice the group up ahead'
 
 },
 {
-    question : `Q6 : It's finally your turn! You're on the track of setting a new record that a crowd has appeared around you!`,
+    question : `It's finally your turn! You're on the track of setting a new record that a crowd has appeared around you!`,
     type : 'EI',
     option1 : `The pressure is on, you can't disappoint your newly made fans!`,
     option2 : `All these eyes on you make you feel like you're going to make a mistake`
 },
 {
-    question : `Q7 : Oh no! It seems like you've lost the game,`,
+    question : `Oh no! It seems like you've lost the game,`,
     type : 'TF',
     option1 : ``,
     option2 : ``
@@ -51,9 +51,9 @@ const questions = [{
     option2 : `Candy, stamps, fake tattoos! I don't want to leave the arcade empty handed!`
 },
 {
-    question : 'Seems like the arcade has closed, what was the most memorable part?',
+    question : 'The arcade has already closed, what was the most memorable part of each game?',
     type : 'SN',
-    option1 : 'The exact details — like the timing, layout, and mechanics of the games',
+    option1 : 'The exact details — like the timing, layout, and mechanics of the games!',
     option2 : 'The amazing plot and storyline, the characters outshined the games!'
 },
 {
@@ -95,7 +95,6 @@ optionButtons.addEventListener('click', event =>{
     let audio = new Audio(audio_picked)
     audio.play();
     questioncounter += 1;
-    console.log(scores)
     questionFunction();
 })
 
@@ -120,7 +119,6 @@ function results(){
 
     let mbtiarr = [];
     types = ['E','I','S','N','T','F','J','P']
-/* find a more better time complexity/code for this plsss oki ty future me */
     for(let i = 0; i < types.length -1; i++){
         if(scores[types[i]] > scores[types[i+1]]){
             mbtiarr.push(types[i])

@@ -8,6 +8,10 @@ body{
     
 }
 
+.prize-corner{
+    text-align: center;
+}
+
 .main-container, .start-page{
    text-align: center;
    max-width: 400px;
@@ -27,9 +31,7 @@ button{
 }
 
 h1,p{
-     color: #cde9c3;
-     
-     
+     color: #cde9c3; 
 }
 
 p{
@@ -44,6 +46,7 @@ button:hover{
 }
 
 #option-one, #option-two{
+    border:none;
     font-size: 20px;
     padding:3%;
     background-color:#564D80;
@@ -51,7 +54,7 @@ button:hover{
 }
 
 #option-one:hover, #option-two:hover{
-    
+    border:none;
     padding:3%;
     background-color: #e5f7df;
     transition: 5ms;
@@ -61,6 +64,7 @@ button:hover{
 .button1{
     min-height:10%;
     font-size: 20px;
+    border:none;
     /*border:dotted 3px ;*/
     max-width: 60%;
     padding: 13px;
@@ -82,3 +86,25 @@ button:hover{
     text-decoration: none;
     
 }
+
+img{
+      cursor:pointer;
+    }
+    .overlays {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .overlays img {
+      max-width: 90%;
+      max-height: 90%;
+      
+    }
