@@ -7,10 +7,10 @@ const questions = [{
     option2 : 'Analyze the layout, you want to find the games that suit your own rhythm'
 },
 {
-    question : 'Before you start playing, do you....',
+    question : 'Before you start selecting a game, what do you do?',
     type : 'JP',
     option1 : 'Take a moment to figure out what games you should spend your tokens on, there is no rush',
-    option2 : 'Wander freely, letting whatever catches your eye guide your play'
+    option2 : 'I wander freely, letting whatever catches your eye guide your play'
 },
 {
     question : 'When you pick a game to play, what do you prefer?',
@@ -39,10 +39,29 @@ const questions = [{
     option2 : `All these eyes on you make you feel like you're going to make a mistake`
 },
 {
-    question : `Oh no! It seems like you've lost the game,`,
+    question : `You start to become extra focused on the game because winning to you means...`,
     type : 'TF',
-    option1 : ``,
-    option2 : ``
+    option1 : `Proving your skills to everyone and making smart decisions`,
+    option2 : `Sharing the experience and creating memorable moments with others`
+},
+{
+    question : `Oh no! It seems like you've lost the game.`,
+    type : 'TF',
+    option1 : `I analyze what went wrong so I can improve my strategy next time`,
+    option2 : `I feel a little disappointed but quickly bounce back, I remember it's just for fun`
+},
+{
+    question : `You've decided that's enough games, looking over at the prize corner you prefer prizes that are...`,
+    type : 'JP',
+    option1 : `Thoughtful and lasting — something you'll treasure over time`,
+    option2 : 'Fun, quirky, or surprising — something that brings immediate delight'
+},
+
+{
+    question : `A friend wants the same prize as you, what's the best way to decide who gets it?`,
+    type : 'TF',
+    option1 : 'I have a straightforward conversation to figure out who deserves it more based on effort',
+    option2 : 'I would consider their feelings and might offer to let them have it if it makes them happier'
 },
 {
     question : 'Time to spend your tickets!',
@@ -56,12 +75,7 @@ const questions = [{
     option1 : 'The exact details — like the timing, layout, and mechanics of the games!',
     option2 : 'The amazing plot and storyline, the characters outshined the games!'
 },
-{
-    question : 'Question 3',
-    type : 'EI',
-    option1 : 'question3',
-    option2 : 'question3'
-},
+
 
 
 ]

@@ -30,7 +30,7 @@ button{
     padding: 10px 20px;
 }
 
-h1,p{
+h1,h2,p{
      color: #cde9c3; 
 }
 
@@ -87,7 +87,7 @@ button:hover{
     
 }
 
-img{
+.thumbnails img{
       cursor:pointer;
     }
     .overlays {
